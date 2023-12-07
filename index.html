@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASTELICIOSO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">PASTELICIOSO</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">
+                    <img src="img/logo-pastelicioso.png" alt="logotipo">
+                </h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="homeBtn" class="boton-menu boton-categoria boton-categoria active">
+                            <i class="bi bi-hand-index-thumb"></i> Home
+                        </button>
+                    </li>
+                    <li>
+                        <button id="aboutUsBtn" class="boton-menu boton-menu-about-us boton-categoria">
+                            <i class="bi bi-info-circle"></i> About Us
+                        </button>  
+                    </li>
+                    <li>
+                        <button id="todosBtn" class="boton-menu boton-categoria">
+                            <i class="bi bi-hand-index-thumb-fill"></i> All products
+                        </button>
+                    </li>
+                    <li>
+                        <button id="Cheescake" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Contact</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-categoria" href="./login.html">
+                            <i class="bi bi-person"></i> Login
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Shopping cart <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+           
+            <footer>
+                <p class="texto-footer">© 2023 EVND-TI34</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">PASTELICIOSO</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+            <div id="contenidoHome" class="contenido-home home">
+                <h2>WELCOME TO PASTELICIOSO!!!!</h2>
+                <p>Find your favorite cake, we have the best options for you, adapting to your needs.</p>
+            </div>
+            <section id="aboutUsSection" class="about-us-section titulo-principal">
+                <h2>About Us</h2>
+                <p>Pastelicioso is a platform whose main objective is to make it easier to buy a cake.</p>
+                
+            </section>
+        </main>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
+
+
+

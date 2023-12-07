@@ -1,0 +1,124 @@
+[
+    
+    {
+        "id": "Pastel-01",
+        "titulo": "Pastel de Chocolate",
+         "imagen": "./img/Pastel1.jpg",
+         "categoria": {
+             "nombre": "Pasteles",
+             "id": "todos"
+         },
+         "precio": 500
+    },
+    {
+        "id": "Pastel-02",
+        "titulo": "Pastel Tres Leches",
+         "imagen": "./img/Pastel2.jpg",
+         "categoria": {
+             "nombre": "Pasteles",
+             "id": "todos"
+         },
+         "precio": 550
+    },
+    {
+        "id": "Pastel-03",
+        "titulo": "Pastel de Zarzamora",
+         "imagen": "./img/Pastel3.jpg",
+         "categoria": {
+             "nombre": "Pasteles",
+             "id": "todos"
+         },
+         "precio": 600
+    },
+    {
+        "id": "Pastel-04",
+       "titulo": "Pastel Redvelvet",
+        "imagen": "./img/Pastel4.jpg",
+        "categoria": {
+            "nombre": "Pasteles",
+            "id": "todos"
+        },
+        "precio": 350
+    },
+    {
+        "id": "Pastel-05",
+       "titulo": "Pastel Chocolate Explosivo ",
+        "imagen": "./img/Pastel5.jpg",
+        "categoria": {
+            "nombre": "Pasteles",
+            "id": "todos"
+        },
+        "precio": 600
+    },
+    {
+        "id": "Pastel-06",
+       "titulo": "Pastel Boda",
+        "imagen": "./img/Pastel6.jpg",
+        "categoria": {
+            "nombre": "Pasteles",
+            "id": "todos"
+        },
+        "precio": 600
+    },
+    {
+        "id": "Pastel-07",
+       "titulo": "Pastel Colores",
+        "imagen": "./img/Pastel7.jpg",
+        "categoria": {
+            "nombre": "Pasteles",
+            "id": "todos"
+        },
+        "precio": 550
+    },
+    {
+        "id": "Pastel-08",
+       "titulo": "Pastel Marino ",
+        "imagen": "./img/Pastel8.jpg",
+        "categoria": {
+            "nombre": "Pasteles",
+            "id": "todos"
+        },
+        "precio": 600
+    },
+    {
+        "id": "Pastel-09",
+       "titulo": "Pastel Blueberry",
+        "imagen": "./img/Pastel9.jpg",
+        "categoria": {
+            "nombre": "Pasteles",
+            "id": "todos"
+        },
+        "precio": 450
+    },
+    {
+        "id": "Pastel-10",
+       "titulo": "Pastel Macarron",
+        "imagen": "./img/Pastel10.jpg",
+        "categoria": {
+            "nombre": "Pasteles",
+            "id": "todos"
+        },
+        "precio": 650
+    },
+    {
+        "id": "Pastel-11",
+       "titulo": "Pastel ChocoExtremo",
+        "imagen": "./img/Pastel11.jpg",
+        "categoria": {
+            "nombre": "Pasteles",
+            "id": "todos"
+        },
+        "precio": 500
+    },
+    {
+        "id": "Pastel-12",
+       "titulo": "Pastel Rosas",
+        "imagen": "./img/Pastel12.jpg",
+        "categoria": {
+            "nombre": "Pasteles",
+            "id": "todos"
+        },
+        "precio": 600
+    }
+
+]
