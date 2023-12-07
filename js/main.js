@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     botonesCategorias.forEach(boton => {
         boton.addEventListener("click", (e) => {
+
             contenidoHome.style.display = "none";
             aboutUsSection.style.display = "none";
             contenedorProductos.style.display = "none";
@@ -66,8 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (e.currentTarget.id === "aboutUsBtn") {
                 aboutUsSection.style.display = "block";
             } else if (e.currentTarget.id === "todosBtn") {
-                contenedorProductos.style.display = "flex"; // Cambia a "grid" si usas grid
-                contenedorProductos.style.flexWrap = "wrap"; // Añade esta línea para flex-wrap
+                contenedorProductos.style.flexWrap = "wrap";
             }
         });
     });
