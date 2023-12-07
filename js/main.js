@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (e.currentTarget.id === "aboutUsBtn") {
                 aboutUsSection.style.display = "block";
             } else if (e.currentTarget.id === "todosBtn") {
-                contenedorProductos.style.flexWrap = "wrap";
+                contenedorProductos.style.display = "wrap";
             }
         });
     });
