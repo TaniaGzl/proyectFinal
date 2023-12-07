@@ -14,6 +14,15 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
+.home {
+    width: 500px;
+    background: #ececec;
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: var(--clr-main);
+    text-align: center;
+}
 
 h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
     margin: 0;
@@ -151,6 +160,10 @@ main {
 .producto-imagen {
     max-width: 100%;
     border-radius: 1rem;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
 }
 
 .producto-detalles {
