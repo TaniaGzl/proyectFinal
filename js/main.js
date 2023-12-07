@@ -6,6 +6,8 @@ fetch("./js/productos.json")
         productos = data;
         cargarProductos(productos);
     })
+
+
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
@@ -16,6 +18,8 @@ const numerito = document.querySelector("#numerito");
 botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
     aside.classList.remove("aside-visible");
 }))
+
+
 function cargarProductos(productosElegidos) {
 
     contenedorProductos.innerHTML = "";
@@ -47,32 +51,27 @@ document.addEventListener("DOMContentLoaded", function () {
     // Mostrar contenido inicial
     contenidoHome.style.display = "block";
     aboutUsSection.style.display = "none";
-    contenedorProductos.style.display = "none"
-
+    contenedorProductos.style.display = "none";
 
     const botonesCategorias = document.querySelectorAll(".boton-categoria");
 
     botonesCategorias.forEach(boton => {
         boton.addEventListener("click", (e) => {
-        
             contenidoHome.style.display = "none";
             aboutUsSection.style.display = "none";
             contenedorProductos.style.display = "none";
 
-            
             if (e.currentTarget.id === "homeBtn") {
                 contenidoHome.style.display = "block";
             } else if (e.currentTarget.id === "aboutUsBtn") {
                 aboutUsSection.style.display = "block";
             } else if (e.currentTarget.id === "todosBtn") {
-                contenedorProductos.style.display = "block";
+                contenedorProductos.style.display = "flex"; // Cambia a "grid" si usas grid
+                contenedorProductos.style.flexWrap = "wrap"; // Añade esta línea para flex-wrap
             }
-
-   
         });
     });
 });
-
 
 function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".producto-agregar");
