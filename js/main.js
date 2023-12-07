@@ -67,7 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (e.currentTarget.id === "aboutUsBtn") {
                 aboutUsSection.style.display = "block";
             } else if (e.currentTarget.id === "todosBtn") {
-                contenedorProductos.style.display = "wrap";
+                contenedorProductos.style.display = "grid";
+                contenedorProductos.style.gridAutoFlow = "row"; // Otras propiedades CSS que desees agregar
             }
         });
     });
