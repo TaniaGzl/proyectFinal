@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
 
     <div class="wrapper">
         <header class="header-mobile">
-            <h1 class="logo">PASTELICIOSO</h1>
+            <h1 class="logo">PASTELICIOSO
+            </h1>
             <button class="open-menu" id="open-menu">
                 <i class="bi bi-list"></i>
             </button>
@@ -25,32 +27,32 @@
             </button>
             <header>
                 <h1 class="logo">
-                    <img src="img/logo-pastelicioso.png" alt="logotipo">
+                    <img src="img/logo-pastelicioso.png" alt="logotipo" width="250" height="100">
                 </h1>
             </header>
             <nav>
                 <ul class="menu">
                     <li>
                         <button id="homeBtn" class="boton-menu boton-categoria active">
-                            <i class="bi bi-hand-index-thumb"></i> Home
+                            <i class="bi bi-house-door"></i> Home
                         </button>
                     </li>
                     <li>
                         <button id="aboutUsBtn" class="boton-menu boton-categoria">
-                            <i class="bi bi-info-circle"></i> About Us
+                            <i class="bi bi-person"></i> About Us
                         </button>  
                     </li>
                     <li>
                         <button id="todosBtn" class="boton-menu boton-categoria">
-                            <i class="bi bi-hand-index-thumb-fill"></i> All products
+                            <i class="bi bi-box"></i> All products
                         </button>
                     </li>
                     <li>
-                        <button id="Cheescake" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Contact</button>
+                        <button id="contactBtn" class="boton-menu boton-categoria"><i class="bi bi-chat"></i>Contact</button>
                     </li>
                     <li>
                         <a class="boton-menu boton-categoria" href="./login.html">
-                            <i class="bi bi-person"></i> Login
+                            <i class="bi bi-lock"></i> Login
                         </a>
                     </li>
                     <li>
@@ -67,19 +69,70 @@
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal" id="titulo-principal">PASTELICIOSO</h2>
             <div id="contenedor-productos" class="contenedor-productos ">
                 <!-- Esto se va a rellenar con JS -->
             </div>
-            <div id="contenidoHome" class="contenido-home home ">
-                <h2>WELCOME TO PASTELICIOSO!!!!</h2>
-                <p>Find your favorite cake, we have the best options for you, adapting to your needs.</p>
+            <div id="contenidoHome">
+                <div class="contenido-home">
+                    <div class="home">
+                        <h2>WELCOME TO PASTELICIOSO!!!!</h2>
+                        <p>Find your favorite cake, we have the best options 
+                            for you, adapting to your needs.</p>
+                    </div>
+                </div>
             </div>
-            <section id="aboutUsSection" class="about-us-section titulo-principal">
-                <h2>About Us</h2>
-                <p>Pastelicioso is a platform whose main objective is to make it easier to buy a cake.</p>
-                
+            <section id="aboutUsSection">
+                <div class="containerAbout">
+                    <div class="about">
+                        <h2>About Us</h2>
+                        <p>Pastelicioso, strives to offer cakes that are tailored to the unique needs of our customers. We are honored to be a part of your memorable moments, creating delicacies that not only satisfy your palate. With a passion for excellence, at Pastelicioso, we transform your ideas into unforgettable flavors, making you an accomplice to the magic of every special occasion.</p>
+                    </div>
+                </div>
             </section>
+            <div id="contenidoContact" class="bodyContac">
+                <div class="contenedorContact">
+                    <div class="contenido">
+                        <div class="left-side">
+                            <div class="address details">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="topic">Address</div>
+                                <div class="text-one">av.Paseos del Mayab</div>
+                                <div class="text-two">Playa del carmen, Q. Roo</div>
+                            </div>
+                            <div class="phone details">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="topic">Phone</div>
+                                <div class="text-one">+52 984 367 3524</div>
+                                <div class="text-two">+52 984 247 0266</div>
+                            </div>
+                            <div class="email details">
+                                <i class="fas fa-envelope"></i>
+                                <div class="topic">Email</div>
+                                <div class="text-one">ventas@pastelicioso.com.mx</div>
+                                <div class="text-two">soporte@pastelicioso.com.mx</div>
+                            </div>
+                            </div>
+                            <div class="right-side">
+                                <div class="topic-text">Send us a message</div>
+                                <p>If you have any questions or comments about the applications, you can send me message from here. It's my pleasure to help you</p>
+                            <form action="#">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Enter your name">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Enter your email">
+                                </div>
+                                <div class="input-box message-box">
+                                    <textarea placeholder="Enter your message"></textarea>
+                                </div>
+                                <div class="button">
+                                    <input type="button" value="Send Now">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
     

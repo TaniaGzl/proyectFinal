@@ -47,13 +47,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const contenidoHome = document.getElementById("contenidoHome");
     const aboutUsSection = document.getElementById("aboutUsSection");
     const contenedorProductos = document.getElementById("contenedor-productos");
+    const contenidoContact = document.getElementById("contenidoContact");  // Agregado
 
     // Mostrar contenido inicial
     contenidoHome.style.display = "block";
     aboutUsSection.style.display = "none";
     contenedorProductos.style.display = "none";
+    contenidoContact.style.display = "none";  // Agregado
 
     const botonesCategorias = document.querySelectorAll(".boton-categoria");
+    const contactBtn = document.getElementById("contactBtn");  // Agregado
 
     botonesCategorias.forEach(boton => {
         boton.addEventListener("click", (e) => {
@@ -61,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
             contenidoHome.style.display = "none";
             aboutUsSection.style.display = "none";
             contenedorProductos.style.display = "none";
+            contenidoContact.style.display = "none";  // Agregado
 
             if (e.currentTarget.id === "homeBtn") {
                 contenidoHome.style.display = "block";
@@ -72,7 +76,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    contactBtn.addEventListener("click", () => {  // Agregado
+        contenidoContact.style.display = "block";
+        contenidoHome.style.display = "none";
+        aboutUsSection.style.display = "none";
+        contenedorProductos.style.display = "none";
+    });
 });
+
 
 function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".producto-agregar");
