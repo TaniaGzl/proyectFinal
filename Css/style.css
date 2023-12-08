@@ -62,7 +62,7 @@
     color: var(--clr-main);
 }
 .about {
-    width: 50%;
+    width: 60%;
     padding: 20px;
     color: var(--clr-main);
     text-align: left;
@@ -613,4 +613,34 @@ main {
         width: 100%;
         margin-left: 0;
     }
+}
+
+.contenido-home img,
+.home img,
+.containerAbout img,
+.about img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 720px) {
+    .home h2 {
+        font-size: 30px; /* Ajusta el tamaño según sea necesario */
+    }
+
+    .home p {
+        font-size: 14px; /* Ajusta el tamaño según sea necesario */
+        padding: 5px; /* Ajusta el espacio entre párrafos */
+    }
+
+    .about h2 {
+        font-size: 30px; /* Ajusta el tamaño según sea necesario */
+    }
+
+    .about p {
+        font-size: 14px; /* Ajusta el tamaño según sea necesario */
+        padding: 5px; /* Ajusta el espacio entre párrafos */
+    }
+
+    /* Otros ajustes de estilos para pantallas más pequeñas */
 }

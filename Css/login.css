@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #D291BC;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+   background-image: url(../img/fondologin.png);
+   background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
