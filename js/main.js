@@ -135,3 +135,17 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
+
+// Obtén todos los botones con la clase 'boton-menu'
+const botonesMenu = document.querySelectorAll('.boton-menu');
+
+// Agrega un evento de clic a cada botón
+botonesMenu.forEach(boton => {
+  boton.addEventListener('click', function() {
+    // Elimina la clase 'active' de todos los botones
+    botonesMenu.forEach(b => b.classList.remove('active'));
+
+    // Agrega la clase 'active' solo al botón clicado
+    this.classList.add('active');
+  });
+});
